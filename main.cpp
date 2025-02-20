@@ -226,8 +226,7 @@ public:
 
 int main(int argc, char* argv[]) {
     try {
-        MandelbrotExplorer explorer;
-        explorer.run();
+        MandelbrotExplorer().run();
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
         return 1;
